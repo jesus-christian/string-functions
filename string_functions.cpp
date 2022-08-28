@@ -46,7 +46,7 @@ int _strcmp(const char* _firstString, const char* _secondString)
     while(*_firstString && (*_firstString == *_secondString))
     {
         ++_firstString;
-        ++_secondString;                
+        ++_secondString;
     }
     return (*_firstString - *_secondString);
 }
