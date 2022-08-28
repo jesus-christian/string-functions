@@ -43,7 +43,7 @@ size_t _strlen(const char* _string)
 
 int _strcmp(const char* _firstString, const char* _secondString)
 {
-    while(*_firstString && (*_firstString == *_secondString))
+    while (*_firstString && *_firstString == *_secondString)
     {
         ++_firstString;
         ++_secondString;
@@ -51,4 +51,18 @@ int _strcmp(const char* _firstString, const char* _secondString)
     return (*_firstString - *_secondString);
 }
 
+char* _strcpy(char* _firstString, const char* _secondString)
+{
+    char* temporaryPointer = _firstString;
+    while (*_secondString)
+    {
+        *_firstString = *_secondString;
+        ++_firstString;
+        ++_secondString;
+    }
 
+    ++_firstString;
+    *_firstString = '\0';
+
+    return temporaryPointer;
+}

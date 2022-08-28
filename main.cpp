@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include "string_functions.hpp"
-
+#include <string.h>
 int main()
 {
     const char* str = "When the imposter is SUS";
@@ -26,6 +26,12 @@ int main()
     printf("%d\n", _strcmp(str2, str1));
     printf("%d\n", _strcmp(str3, str2));
     printf("%d\n", _strcmp(str2, str2));
+
+
+    char str4[] = "pumpumpumpumpumpumpumpum";
+
+    printf("%p\n", _strcpy(str4, str1));
+    printf("%s\n", str4);
 
     return 0;
 
