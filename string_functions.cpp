@@ -43,8 +43,12 @@ size_t _strlen(const char* _string)
 
 int _strcmp(const char* _firstString, const char* _secondString)
 {
-    int _firstLen =  _strlen(_firstString);
-    int _secondLen = _strlen(_secondString);
-
-    return (_firstLen - _secondLen);
+    while(*_firstString && (*_firstString == *_secondString))
+    {
+        ++_firstString;
+        ++_secondString;                
+    }
+    return (*_firstString - *_secondString);
 }
+
+

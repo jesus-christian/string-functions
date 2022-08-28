@@ -20,11 +20,11 @@ int main()
 
 
     const char* str1 = "When the imposter is SUS";
-    const char* str2 = "When";
-    const char* str3 = "When the imposter is SUSSS";
+    const char* str2 = "When the imposter is SUs";
+    const char* str3 = "When the imposter is SUASS";
 
-    printf("%d\n", _strcmp(str1, str2));
-    printf("%d\n", _strcmp(str1, str3));
+    printf("%d\n", _strcmp(str2, str1));
+    printf("%d\n", _strcmp(str3, str2));
     printf("%d\n", _strcmp(str2, str2));
 
     return 0;
