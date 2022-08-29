@@ -6,5 +6,6 @@ size_t _strlen(const char* _string);
 const char* _strchr(const char* _string, char _char);
 int _strcmp(const char* _firstString, const char* _secondString);
 char* _strcpy(char* _firstString, const char* _secondString);
+char* _strncpy (char* _firstString, const char* _secondString, size_t n);
 
 #endif

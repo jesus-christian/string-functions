@@ -66,3 +66,27 @@ char* _strcpy(char* _firstString, const char* _secondString)
 
     return temporaryPointer;
 }
+
+char* _strncpy (char* _firstString, const char* _secondString, size_t n)
+{
+    char* temporaryPointer = _firstString;
+    size_t i = 0;
+    while (*_secondString && i < n)
+    {
+        *_firstString = *_secondString;
+        ++_firstString;
+        ++_secondString;
+        ++i;
+    }
+
+    while (i < n)
+    {
+        *_firstString = '\0';
+        ++_firstString;
+        ++i;
+    }
+
+
+    return temporaryPointer;
+
+}

@@ -33,6 +33,11 @@ int main()
     printf("%p\n", _strcpy(str4, str1));
     printf("%s\n", str4);
 
+
+    char str5[] = "pumpumpumpumpumpumpumpum";
+
+    printf("%p\n", _strncpy(str5, str1, 35));
+    printf("%s\n", str5);
     return 0;
 
 
